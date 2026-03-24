@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Saas-Landing Page|Powered By FlyonUI</title>
+    <meta name="description" content="Saas Landing page">
+    <link rel="stylesheet" href="src/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+</head>
+<style>
+    .google {
+        font-family: "Archivo Black";
+    }
+
+    .imgone {
+        animation: logo-slide 9s linear infinite;
+    }
+
+    .one_diagnol {
+        transform-origin: right;
+        animation: first 8s linear infinite;
+        transform: rotate(-8deg) scale(1);
+    }
+
+    .second_diagnol {
+        transform-origin: right;
+        animation: second 7s linear infinite;
+        transform: rotate(-10deg) scale(1);
+    }
+
+    .one_translateX {
+        animation: google 6s linear infinite;
+    }
+    .two_translateX{
+        animation:adobe 6s linear infinite;
+    }
+    .slides{
+        transition:0.5s;
+        animation:  slideAnimation 9s ease infinite;
+    }
+    .lap1{
+        transform-origin: right;
+        animation: first_lap 9s linear infinite;
+        transform: rotate(-8deg) scale(1);
+    }
+    .lap2{
+        transform-origin: right;
+        animation: second_lap 9s linear infinite;
+        transform: rotate(-9deg) scale(1);
+    }
+    /* .setting{
+        animation: setting 9s linear infinite;
+    } */
+      @keyframes first_lap {
+        from {
+            transform: rotate(-8deg) translateX(-8%);
+        }
+
+        to {
+            transform: rotate(-8deg) translateX(-18%);
+        }
+    }
+      @keyframes second_lap {
+        from {
+            transform: rotate(-9deg) translateX(-20%);
+        }
+
+        to {
+            transform: rotate(-9deg) translateX(-4%);
+        }
+    }
+
+    @keyframes first {
+        from {
+            transform: rotate(-8deg) translateX(-8%);
+        }
+
+        to {
+            transform: rotate(-8deg) translateX(-18%);
+        }
+    }
+
+    @keyframes second {
+        from {
+            transform: rotate(-9deg) translateX(-15%);
+        }
+
+        to {
+            transform: rotate(-9deg) translateX(-4%);
+        }
+
+    }
+
+    @keyframes google {
+        from {
+            transform: translateX(0%)
+        }
+
+        to {
+            transform: translateX(-30%)
+        }
+    }
+    @keyframes adobe {
+        from {
+            transform: translateX(0%)
+        }
+
+        to {
+            transform: translateX(-30%)
+        }
+    }
+
+
+
+
+    @keyframes logo-slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-40%);
+        }
+
+    }
+    @keyframes slideAnimation {
+    0%{ transform: translateX(0%);
+        transition-duration: 0.5s ;
+        transition-timing-function: ease;
+    }
+    20%{ transform: translateX(0%);
+        transition-duration: 0.5s ;
+        transition-timing-function: ease;
+    }
+    50%{ transform: translateX(-100%);
+        transition-duration: 0.5s ;
+        transition-timing-function: ease; 
+    }
+    70%{ transform: translateX(-200%);
+        transition-duration: 0.5s ;
+        transition-timing-function: ease; 
+    }
+    80%{
+        transform:translateX(-200%);
+        transition-duration: 0.5s ;
+        transition-timing-function: ease; 
+    }
+    100%{ transform: translateX(0%); 
+        transition-duration: 0.5s ;
+        transition-timing-function: ease; 
+    }
+}
+    /* @keyframes setting {
+        from{
+            transform:rotateZ(0deg);
+        }
+        to{
+            transform:rotateZ(180deg);
+        }
+        
+    } */
+   
+</style>
+
+<body class="bg-[rgb(52,47,61)]">
+    <header class="bg-[rgb(52,47,61)] mx-4  sticky top-0 z-40">
+        <nav class="flex items-center justify-between border border-[rgb(52,47,61)] h-15 ">
+
+            <div class="Group1_Logo logo flex gap-2 text-[rgb(96,47,188)]">
+                <svg width="32" height="32" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_18078_104881)">
+                        <mask id="mask0_18078_104881" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="34" height="34">
+                            <path
+                                d="M25.5 0H8.5C3.80558 0 0 3.80558 0 8.5V25.5C0 30.1944 3.80558 34 8.5 34H25.5C30.1944 34 34 30.1944 34 25.5V8.5C34 3.80558 30.1944 0 25.5 0Z"
+                                fill="white"></path>
+                        </mask>
+                        <g mask="url(#mask0_18078_104881)">
+                            <path
+                                d="M25.5 0H8.5C3.80558 0 0 3.80558 0 8.5V25.5C0 30.1944 3.80558 34 8.5 34H25.5C30.1944 34 34 30.1944 34 25.5V8.5C34 3.80558 30.1944 0 25.5 0Z"
+                                fill="url(#paint0_linear_18078_104881)"></path>
+                            <path
+                                d="M16.1238 20.1522C16.511 19.662 17.2479 19.6428 17.66 20.1122L20.5526 23.41C21.1194 24.0563 20.6611 25.0689 19.8016 25.0692H14.3055C13.47 25.0692 13.0026 24.1059 13.5203 23.4501L16.1238 20.1522ZM16.1326 8.45497C16.5308 7.95801 17.286 7.95453 17.6883 8.44813L27.5164 20.5077C28.0488 21.161 27.5838 22.1395 26.741 22.1395H24.4442C24.1428 22.1395 23.8577 22.0034 23.6678 21.7694L17.7029 14.4188C17.2962 13.9175 16.5285 13.927 16.1346 14.4384L10.7303 21.454C10.5411 21.6996 10.2484 21.8435 9.9383 21.8436H7.4881C6.64925 21.8436 6.18332 20.8733 6.70783 20.2186L16.1326 8.45497Z"
+                                fill="url(#paint1_linear_18078_104881)"></path>
+                        </g>
+                        <path
+                            d="M25.5002 0.707886H8.50017C4.19695 0.707886 0.708496 4.19634 0.708496 8.49956V25.4996C0.708496 29.8028 4.19695 33.2912 8.50017 33.2912H25.5002C29.8034 33.2912 33.2918 29.8028 33.2918 25.4996V8.49956C33.2918 4.19634 29.8034 0.707886 25.5002 0.707886Z"
+                            stroke="url(#paint2_linear_18078_104881)" stroke-width="2"></path>
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_18078_104881" x1="30.2812" y1="2.65625" x2="4.25" y2="32.4063"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="currentColor"></stop>
+                            <stop offset="1" stop-color="currentColor"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_18078_104881" x1="17.1147" y1="8.08008" x2="17.1147"
+                            y2="25.0692" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="white"></stop>
+                            <stop offset="1" stop-color="white" stop-opacity="0.6"></stop>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_18078_104881" x1="17.0002" y1="-0.000447931" x2="17.0002"
+                            y2="33.9996" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="white" stop-opacity="0.28"></stop>
+                            <stop offset="1" stop-color="white" stop-opacity="0.04"></stop>
+                        </linearGradient>
+                        <clipPath id="clip0_18078_104881">
+                            <rect width="34" height="34" fill="white"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <div class="Group2_Heading flex items-center heading text-xl text-gray-300 font-bold">
+                    <a href="">
+                        <span>Saas Dashboard</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--Close LOGO -->
+            <div class="Group3_Hamburger flex items-center justify-end md:hidden">
+                <div class="hamburger text-2xl text-gray-500 border-gray-500 border-2 border-solid rounded-md w-8 flex justify-center ml-auto" id="hamburger">
+                    <span id="ham_symbol">&#9776;</span>
+                    <iconify-icon id="cross" class="hidden" icon="tabler:x" width="24" height="24"></iconify-icon>
+                </div>
+            </div>
+            <!-- Close Group3 -->
+            <div class="home_about hidden md:block">
+                <ul class="flex flex-col md:flex-row items-center text-gray-300 font-semibold gap-5 ">
+                    <li><a href="#home" class="active:text-[rgb(96,47,188)]">Home</a></li>
+                    <li><a href="#about" class="active:text-[rgb(96,47,188)]">About us</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#usecases">UseCases</a></li>
+                    <hr class="rotate-90 w-10 opacity-20">
+                    <li class="flex justify-center items-center bg-linear-to-r from-[rgb(96,47,188)] to-[rgb(80,33,168)] hover:bg-[rgb(81,39,39)] rounded-md py-2 px-4"><a href="" class="">Login</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="home_about hidden" id="menu">
+            <ul class="flex flex-col text-gray-300 font-semibold gap-5 ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about" class="active:text-[rgb(96,47,188)]">About us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#usecases">UseCases</a></li>
+                <hr class="opacity-10">
+                <li class="flex justify-center items-center bg-linear-to-r from-[rgb(96,47,188)] to-[rgb(80,33,168)] rounded-md py-2 px-4"><a href="" class="">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="bg-[rgb(52,47,61)] mx-4">
+        <div class="main_flex_multiple_groups flex flex-col justify-center  my-15 gap-6 overflow-hidden" id="home">
+            <!-- First Group -->
+            <div class="main_content_center flex   justify-center">
+
+                <div
+                    class="turn_data bg-[rgba(15,15,15,0.99)] rounded-3xl text-gray-200 w-auto h-12 text-lg text-center px-2 leading-6 flex flex-wrap justify-center items-center opacity-80 ">
+                    <div>Turn Data Into Decisions-Instantly</div>
+                </div>
+                <!-- Turn Data Into Decisions CLose -->
+            </div>
+
+            <!-- Main Heading and Disc Of Saas Landing Page -->
+            <div class="main_content2 flex  justify-center">
+                <div class="heading text-center text-lg">
+                    <p class="font-extrabold font-sans text-2xl text-gray-300 md:text-4xl lg:text-5xl">The Modern SaaS Dashboard for</p>
+                    <p class="google underline text-2xl font-light text-[rgb(101,53,190)] decoration-2 drop font-serif shadow-2xl  md:text-4xl lg:text-5xl">
+                        Clarity And Growth</p>
+                </div>  
+            </div>
+
+            <div
+                class="instruct text-base md:text-lg lg:text-xl flex text-gray-200 opacity-70  w-full leading-7 text-center justify-center">
+                <span>Take Full Control of your Operations marketing.sales.and team insights-all in one powerful
+                    dashboard.Built for
+                    growing startups,remote teams,and digital-first businessess.</span>
+            </div>
+
+            <div class="button_menu flex gap-4 justify-center flex-col items-center md:flex-row ">
+
+                <div
+                    class="button h-12 w-55 font-bold text-lg text-white drop-shadow-2xl bg-linear-to-r from-[rgb(96,47,188)] to-[rgb(88,41,176)] flex justify-center rounded-lg items-center">
+                    <a href="" class="">Get Started For Free</a>
+                </div>
+
+                <div
+                    class="book_me h-12 w-55 bg-linear-to-r from-[rgb(96,47,188)] to-[rgb(73,24,188)] flex justify-center items-center rounded-lg opacity-60 text-purple-400 font-extrabold ">
+                    <a href="">Book a Demo</a>
+                </div>
+            </div>
+            <!-- Close Main HEading and Disc of Saas  -->
+
+            <!-- Saas Dashboard Image -->
+            <div class="main_imgdiv flex justify-center">
+                <img src="saas-dashboard.png" class="rounded-lg" width="1200" alt="">
+            </div>
+            <!-- Trusted By This Great Companies disc -->
+            <div class="trusted_by_companies flex justify-center">
+                <span class="text-center font-bold  text-lg  text-white opacity-35">Trusted BY THIS GREAT
+                    COMPANIES</span>
+            </div>
+            <!-- Trusted Companies Images Close -->
+
+            <div
+                class="img_flex flex gap-4  items-center imgone opacity-55 w-max">
+
+                <div class="img1">
+                    <img src="bestofjs.png" alt="bestofjs" srcset="" class="w-30 h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="dailydev.png" alt="dailydev" class="w-30 h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="devto-logo-bw.png" alt="devto-logo-bw " class="w-20  h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="launchtory.png" alt="launchtory " class="w-30 h-12">
+                </div>
+
+                <div class="img1">
+                    <img src="medium-logo-bw.png" alt="medium-logo-bw " class="w-30 h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="product-hunt.png" alt="product-hunt" class="w-30 h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="reddit.png" alt="reddit" class="w-30 h-10">
+                </div>
+
+                <div class="img1 ">
+                    <img src="ycombinator.png" alt="ycombinator" class="w-30 h-10">
+                </div>
+                <!-- Repeat -->
+                <div class="img1">
+                    <img src="bestofjs.png" alt="bestofjs" srcset="" class="w-30
+                    h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="dailydev.png" alt="dailydev" class="w-30 h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="devto-logo-bw.png" alt="devto-logo-bw " class="w-20  h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="launchtory.png" alt="launchtory " class="w-30 h-12">
+                </div>
+
+                <div class="img1">
+                    <img src="medium-logo-bw.png" alt="medium-logo-bw " class="w-30 h-10 ">
+                </div>
+
+                <div class="img1">
+                    <img src="product-hunt.png" alt="product-hunt" class="w-30 h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="reddit.png" alt="reddit" class="w-30 h-10">
+                </div>
+
+                <div class="img1">
+                    <img src="ycombinator.png" alt="ycombinator" class="w-30 h-10">
+                </div>
+
+            </div>
+        </div>
+        <!--Companies Imges with Transform.. Close -->
+
+
+        <!-- Profile Heading And Disc -->
+        <section id="about">
+
+        <div class="heading flex justify-center flex-col lg:flex-row gap-2">
+            <div class="box1">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-200 opacity-90">We're a Team of
+                    <span
+                        class="font-bold bg-clip-text text-transparent bg-linear-to-r from-purple-500 to-purple-900 md:text-3xl">Builders</span>,
+                    <br>
+                    Just Like You
+                </h2>
+                <p class="text-gray-200 opacity-80 py-2 text-lg">Our Mission is Simple to create tools that remove
+                    friction from your workflow.We're a Team of engineers,designers,and founders who've built this
+                    platform to help teams scale with confidence and clarity.We believe in great UX.bulletproof code.and
+                    delivering features you actually need not bloatware</p>
+            </div>
+            <div class="img">
+                <img src="profile.png" alt="profile" class="w-90 lg:w-600">
+            </div>
+        </div>
+        <!-- Profile heading  Flex Box Close -->
+        </section>
+
+        <section id="features">
+            <div class="headingtwo my-15">
+                <div class="mainheading text-center">
+                    <h2 class="font-bold text-white opacity-80 md:text-3xl text-2xl">Maximize Your WorkFlow with Our Powerful Features
+                    </h2>
+                    <div class="dec text-white opacity-70 text-lg md:text-xl  my-2">From intuitive design to enterprise-level
+                        integrtions-we built every block with your team in mind</div>
+                </div>
+                <div class="button flex justify-center items-center">
+                    <a href=""
+                        class="text-white bg-linear-to-r from-[rgb(92,44,181)] to-[rgb(69,27,145)] text-xl px-3 items-center flex justify-center  rounded-md text-bold py-3">Explore
+                        Full Features Set 🔥</a>
+                </div>
+            </div>
+        <!-- Main Heading_two close in Which Maximize Your WorkFlow -->
+         
+
+
+        <!-- Grid Boxes -->
+
+        <!-- Box No 1 -->
+            <div class="grid_items grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 lg:gap-x-2 gap-y-3">
+                <div class="grid1 border-gray-400 border flex justify-center rounded-md p-3">
+                    <div
+                        class="flexitems flex flex-col justify-center w-full  h-auto ">
+
+                        <div
+                            class="box bg-[rgb(38,35,48)] rounded-md min-h-75 flex flex-col justify-center gap-4">
+
+                            <h1 class="font-bold text-center text-4xl opacity-80 text-[rgb(70,20,134)]">12K</h1>
+                            <div class="text-center text-gray-200">happy users</div>
+                            <!-- Icons -->
+                            <div class="icon1 flex justify-center">
+
+                                <div class="img1 rounded-full w-14">
+                                    <img src="grid1_person.png" alt="" class="rounded-full object-cover w-full">
+                                </div>
+
+                                <div class="star -ml-2.25 z-10 border border-solid border-black rounded-full w-fit h-fit">
+                                    <div
+                                        class="bg-purple-500  w-12 h-12 flex items-center justify-center rounded-full object-cover">
+                                        <iconify-icon icon="tabler:star-filled" class="text-white text-xl"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="icon2 rounded-full w-14 h-14 z-20 -ml-2.5 border border-solid object-cover">
+                                    <img src="grid2_person.png" alt="person2" class="rounded-full object-cover w-fit">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="trusted_by_teams">
+                            <h2 class="text-lg md:text-xl text-white font-bold opacity-60 ">Trusted by Teams Across</h2>
+                            <h2 class="text-lg md:text-xl text-white font-bold opacity-60">the Globe</h2>
+                            <p class="text-white opacity-60 text-md">Thousand of product teams,startups,and enterprises only on our dashboard daily</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Close Box No 1 -->
+                <!-- Box No 2 -->
+
+                <div class="grid2  flex justify-center rounded-md p-3  border-gray-400 border border-solid">
+
+                    <div class="flexitems flex flex-col justify-start  h-full w-full ">
+
+                        <div class="box bg-[rgb(38,35,48)]  rounded-md min-h-75">
+
+                            <div class="flex2 mt-5">
+                                <div class="icons flex">
+
+                                    <div class="w-fit h-fit rounded-full">
+                                        <img src="grid1_person.png" class="rounded-full w-10 h-10 object-cover">
+                                    </div>
+
+                                    <div class="w-fit h-fit -ml-2.5  rounded-full ">
+                                        <img src="grid2_person2.png" class="rounded-full w-10 h-10 object-cover">
+                                    </div>
+
+                                    <div class="w-fit h-fit -ml-2.5  rounded-full ">
+                                        <img src="grid2_person3.png" class="rounded-full w-10 h-10 object-cover">
+                                    </div>
+                                    <div class="w-fit h-fit -ml-2.5  rounded-full">
+                                        <img src="grid2_person4.png" class="rounded-full w-10 h-10 object-cover">
+                                    </div>
+                                </div>
+
+
+                                <div class="a2_designers my-6">
+                                    <h1 class="font-bold text-[rgb(111,50,255)]">A2 Desiginers</h1>
+                                </div>
+
+                                <div class="comunity text-white opacity-80">
+                                    <p>Community of the best Product designers</p>
+                                </div>
+
+                                <div class="product_design_ux_ui flex gap-2 my-4">
+                                    <a href="" class="rounded-md bg-[rgb(83,75,101)] w-20 flex justify-center">Product</a>
+                                    <a href="" class="rounded-md bg-[rgb(83,75,101)] w-18 flex justify-center">Design</a>
+                                    <a href="" class="rounded-md bg-[rgb(83,75,101)] w-10 flex justify-center">Ux</a>
+                                    <a href="" class="rounded-md bg-[rgb(83,75,101)] w-10 flex justify-center">UI</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <h2 class="font-bold text-lg md:text-xl text-white opacity-60">Team Collabration Tools </h2>
+                            <p class=" text-md text-white opacity-60">Assign tasks,share updates,and leave comments directly
+                                within your dashboard</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CLose Box No 2 -->
+                <!-- Box No 3 -->
+
+                <!-- First Diagnol -->
+
+                <div class="grid3 md:col-span-2 lg:col-span-1 border-gray-400 border border-solid flex justify-center rounded-md p-3">
+
+                    <div class="flexitems flex flex-col  w-full min-h-75">
+
+                        <div class="box bg-[rgb(38,35,48)]   rounded-md  h-75 overflow-hidden w-auto">
+
+                                <div class="one_diagnol md:hidden  min-w-220">
+
+                                    <div class="main  flex gap-6 ">
+
+                                        <div class="img1 rounded-md  w-fit h-fit object-cover">
+                                            <img src="cloudfare.png" alt="cloudfare" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+
+                                        <div class="img2 rounded-md w-fit h-fit object-cover">
+                                            <img src="freedly.png" alt="cloudfare" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+                                        <div class="img3 rounded-md w-fit h-fit object-cover">
+                                            <img src="youtube.png" alt="cloudfare" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+
+                                        <div class="img4 rounded-md w-fit h-fit object-cover">
+                                            <img src="IA.png" alt="cloudfare" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+
+                                        <div class="img5 rounded-md  w-fit h-fit object-cover">
+                                            <img src="facebook.png" alt="cloudfare" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+
+                                        <div class="img6 rounded-md  w-fit h-fit object-cover">
+                                            <img src="instagram.png" alt="cloudfare"
+                                                class=" insta rounded-md object-cover w-30 h-10">
+                                        </div>
+                                        <!-- repeat -->
+                                        <div class="img7 rounded-md  w-fit h-fit object-cover">
+                                            <img src="cloudfare.png" alt="cloudfare" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="freedly.png" alt="cloudfare" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="youtube.png" alt="cloudfare" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+                                         
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="IA.png" alt="IA" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="facebook.png" alt="facebook" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="instagram.png" alt="cloudfare" class="rounded-md object-cover w-30 h-10">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Laptop Diagnol -->
+                                <div class="lap1 hidden md:block min-w-220">
+
+                                    <div class="main  flex gap-5 ">
+
+                                        <div class="img1 rounded-md w-fit h-fit object-cover">
+                                            <img src="cloudfare.png" alt="cloudfare" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+
+                                        <div class="img2 rounded-md w-fit h-fit object-cover">
+                                            <img src="freedly.png" alt="cloudfare" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+                                        <div class="img3 rounded-md w-fit h-fit object-cover">
+                                            <img src="youtube.png" alt="cloudfare" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+
+                                        <div class="img4 rounded-md  w-fit h-fit object-cover">
+                                            <img src="IA.png" alt="cloudfare" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+
+                                        <div class="img5 rounded-md  w-fit h-fit object-cover">
+                                            <img src="facebook.png" alt="cloudfare" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+
+                                        <div class="img6 rounded-md   w-fit h-fit object-cover">
+                                            <img src="instagram.png" alt="instagram"
+                                                class=" insta rounded-md object-cover w-60 h-10">
+                                        </div>
+                                        <!-- repeat -->
+                                        <div class="img7 rounded-md  w-fit h-fit object-cover">
+                                            <img src="cloudfare.png" alt="cloudfare" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="freedly.png" alt="freedly" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="youtube.png" alt="youtube" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="IA.png" alt="IA" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="facebook.png" alt="facebook" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+                                        <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                            <img src="instagram.png" alt="cloudfare" class="rounded-md object-cover w-60 h-10">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- First Diagnol Close -->
+
+                                <!-- Second Diagnol -->
+
+                            <div class="second_diagnol md:hidden  min-w-220 ">
+
+                                <div class="second_main  flex gap-5 ">
+
+                                    <div class="img1 rounded-md   w-fit h-fit object-cover">
+                                        <img src="slack.png" alt="cloudfare" class="rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                    <div class="img2 rounded-md w-fit h-fit object-cover">
+                                        <img src="stripe.png" alt="cloudfare" class="rounded-md object-cover w-11 h-10">
+                                    </div>
+                                    <div class="img3 rounded-md w-fit h-fit object-cover">
+                                        <img src="zappier.png" alt="cloudfare" class="rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                    <div class="img4 rounded-md w-fit h-fit object-cover">
+                                        <img src="twitter.png" alt="cloudfare" class="rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                    <div class="img5 rounded-md w-fit h-fit object-cover">
+                                        <img src="active_campaign.png" alt="cloudfare"
+                                            class="rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                    <div class="img6 rounded-md   w-fit h-fit object-cover">
+                                        <img src="butterfly.png" alt="cloudfare"
+                                            class=" insta rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                    <!-- repeat -->
+                                    <div class="img7 rounded-md  w-fit h-fit object-cover">
+                                        <img src="slack.png" alt="cloudfare" class="rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                    <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                        <img src="stripe.png" alt="cloudfare" class="rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                    <div class="img8 rounded-md   w-fit h-fit object-cover">
+                                        <img src="zappier.png" alt="cloudfare" class="rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                     <div class="img4 rounded-md   w-fit h-fit object-cover">
+                                        <img src="twitter.png" alt="cloudfare" class="rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                    <div class="img5 rounded-md  w-fit h-fit object-cover">
+                                        <img src="active_campaign.png" alt="cloudfare"
+                                            class="rounded-md object-cover w-11 h-10">
+                                    </div>
+
+                                    <div class="img6 rounded-md   w-fit h-fit object-cover">
+                                        <img src="butterfly.png" alt="cloudfare"
+                                            class=" insta rounded-md object-cover w-11 h-10">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- lap -->
+                            <div class="lap2 hidden md:block min-w-220">
+
+                                <div class="second_main flex gap-5 ">
+
+                                    <div class="img1 rounded-md w-fit h-fit object-cover">
+                                        <img src="slack.png" alt="cloudfare" class="rounded-md object-cover w-14 h-9">
+                                    </div>
+
+                                    <div class="img2 rounded-md  w-fit h-fit object-cover">
+                                        <img src="stripe.png" alt="cloudfare" class="rounded-md object-cover w-14 h-9">
+                                    </div>
+                                    <div class="img3 rounded-md  w-fit h-fit object-cover">
+                                        <img src="zappier.png" alt="cloudfare" class="rounded-md object-cover w-14 h-9">
+                                    </div>
+
+                                    <div class="img4 rounded-md  w-fit h-fit object-cover">
+                                        <img src="twitter.png" alt="cloudfare" class="rounded-md object-cover w-14 h-9">
+                                    </div>
+
+                                    <div class="img5 rounded-md  w-fit h-fit object-cover">
+                                        <img src="active_campaign.png" alt="cloudfare"
+                                            class="rounded-md object-cover w-14 h-9">
+                                    </div>
+
+                                    <div class="img6 rounded-md  w-fit h-fit object-cover">
+                                        <img src="butterfly.png" alt="cloudfare"
+                                            class=" insta rounded-md object-cover w-14 h-9">
+                                    </div>
+                                    <!-- repeat -->
+                                    <div class="img7 rounded-md  w-fit h-fit object-cover">
+                                        <img src="slack.png" alt="cloudfare" class="rounded-md object-cover w-14 h-9">
+                                    </div>
+                                    <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                        <img src="stripe.png" alt="cloudfare" class="rounded-md object-cover w-14 h-9">
+                                    </div>
+
+                                    <div class="img8 rounded-md  w-fit h-fit object-cover">
+                                        <img src="zappier.png" alt="cloudfare" class="rounded-md object-cover w-14 h-9">
+                                    </div>
+
+                                    <div class="img4 rounded-md  w-fit h-fit object-cover">
+                                        <img src="twitter.png" alt="cloudfare" class="rounded-md object-cover w-14 h-10">
+                                    </div>
+
+                                    <div class="img5 rounded-md  w-fit h-fit object-cover">
+                                        <img src="active_campaign.png" alt="cloudfare"
+                                            class="rounded-md object-cover w-14 h-10">
+                                    </div>
+
+                                    <div class="img6 rounded-md w-fit h-fit object-cover">
+                                        <img src="butterfly.png" alt="cloudfare"
+                                            class=" insta rounded-md object-cover w-14 h-10">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="Third Party">
+
+                                <h2 class="font-bold text-lg md:text-xl text-white opacity-60">Thrid Party Integrations</h2>
+                                <p class="text-white text-md opacity-60 md:text-xl">Integrate app like Slack & Notion and other apps with ease.</p>
+                            </div>
+                    </div>
+                </div>
+                <!-- Box No 3 Close -->
+
+                <!-- Box No 4 -->
+
+                    <div class="grid4 lg:col-span-2 border-gray-400 border border-solid flex justify-center rounded-md p-3 ">
+
+                        <div
+                            class="flexitems flex flex-col  w-fullh-auto ">
+
+                            <div class="box bg-[rgb(38,35,48)]  rounded-md min-h-75 relative">
+                                <div class="img absolute bottom-0">
+                                    <img src="real-estate-branding.png" alt="real-estate-branding" class="bottom-0 w-90 ">
+                                </div>
+                            </div>
+
+
+                            <div class="AI_based">
+
+                                <h2 class="font-bold text-lg md:text-xl text-white opacity-60">AI-Based Suggestions</h2>
+                                <p class="text-white text-md md:text-xl opacity-60">Let our AI recommend layout optimizations and workflow
+                                    improvements based on your usage patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Box No 4 Close -->
+               
+
+                <div class="grid5  border-gray-400 border border-solid flex justify-center rounded-md  p-3 ">
+
+                    <div
+                        class="flexitems flex flex-col  w-full h-auto ">
+
+                        <div class="box bg-[rgb(38,35,48)]  rounded-md min-h-75 relative">
+
+                            <div class="svg absolute inset-0 flex items-center justify-center">
+
+                                <!-- big circles -->
+                                <div class="box3 absolute w-65 h-65 bg-[rgb(96,47,188)] opacity-20 rounded-full"></div>
+                                <div class="box3 absolute w-55 h-55 bg-[rgb(96,47,188)] opacity-30 rounded-full"></div>
+
+                                <div class="box3 absolute w-40 h-40 bg-[rgb(96,47,188)] opacity-40  rounded-full"></div>
+
+                                <!-- Small Logo -->
+                                <div class="logo relative z-10 rounded-full border-2 border-black bg-[rgb(96,47,188)] p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+                                        fill="none" class="rounded-full object-cover">
+
+                                        <path
+                                            d="M15.5288 20.5968C16.0513 19.935 17.0459 19.9092 17.602 20.5431L21.3891 24.8605C22.1537 25.7327 21.5345 27.0998 20.3745 27.0998H13.1792C12.0519 27.0998 11.4216 25.7991 12.1196 24.9142L15.5288 20.5968ZM15.5395 5.07732C16.0768 4.40671 17.0963 4.40241 17.6391 5.06853L30.6303 21.0099C31.3487 21.8914 30.7216 23.2121 29.5844 23.2121H26.5952C26.1886 23.2121 25.8035 23.0287 25.5473 22.7131L17.6587 12.9894C17.1097 12.3134 16.0739 12.3268 15.5424 13.0168L8.39596 22.2931C8.1406 22.6246 7.74604 22.8194 7.32761 22.8195H4.13425C3.00257 22.8192 2.37392 21.5094 3.08151 20.6261L15.5395 5.07732Z"
+                                            fill="url(#paint0_linear_15884_114205)"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_15884_114205" x1="16.8595" y1="4.57164"
+                                                x2="16.8595" y2="27.0998" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0" stop-color="white"></stop>
+                                                <stop offset="1" stop-color="white" stop-opacity="0.6"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="integration_">
+                            <h2 class="font-bold text-lg md:text-xl text-white opacity-60 font-serif">Integration Ready Platform</h2>
+                            <p class="text-white md:text-xl text-md opacity-60">Gain insights and make informed decisions with powerful
+                                analytics features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Box No:5 Close AllGrids CLose -->
+              <!-- Box No 5 Close -->
+        </section>        
+
+            <!-- Main Close  -->
+    </main>
+    <section class="bg-[rgb(38,35,48)] h-max py-3" id="usecases">
+        <div class="main lg:flex items-center  my-2 px-4">
+            <div class="main">
+
+                <div class="heading py-2">
+                    <h1 class="text-xl md:text-3xl lg:text-4xl text-gray-200 font-extrabold opacity-90 ">Built to Help
+                        You Do More in Less Time</h1>
+                </div>
+
+                <div class="des my-2">
+                    <p class="text-white text-xl opacity-60">Leverage artificial intelligence algorithms to provide
+                        users with valuable insights,predictive analytics, and recommendations to optimize their
+                        processes and better business outcomes.</p>
+                </div>
+
+            </div>
+        
+
+                <div class="grid2 grid grid-cols-1  md:grid-cols-2 gap-y-5 md:gap-x-5 mt-6">
+                    <div class="box1 bg-[rgb(59,52,68)] h-auto md:min-h-50 w-auto rounded-md pl-4 py-4  ">
+                        <div class="icon bg-[rgb(96,47,188)] w-9 h-9 flex justify-center items-center text-white my-2">
+                            <iconify-icon icon="tabler:file-search" width="24" height="24"></iconify-icon>
+                        </div>
+
+                        <div class="heading">
+                            <h1 class="text-md text-gray-200 font-bold opacity-80 md:text-xl lg:text-2xl">
+                                Subscription Analytics</h1>
+                        </div>
+                        <div class="desc text-white text-md opacity-70 py-2">
+                            Monitor monthly recurring revenue, churn rates, and customer lifetime value across all
+                            pricing tiers with precision.
+                        </div>
+                    </div>
+
+                    <div class="box2 bg-[rgb(59,52,68)] h-auto  md:min-h-50 w-auto rounded-md pl-4 py-4">
+                        <div class="icon bg-[rgb(227,147,28)] w-9 h-9 flex justify-center items-center text-white my-2">
+                            <iconify-icon icon="tabler:trending-up" width="24" height="24"></iconify-icon>
+                        </div>
+
+                        <div class="heading">
+                            <h1 class="text-md text-gray-200 font-bold opacity-80 md:text-xl lg:text-2xl">
+                                Subscription Analytics</h1>
+                        </div>
+                        <div class="desc text-white text-md opacity-70 py-2">
+                            Monitor monthly recurring revenue, churn rates, and customer lifetime value across all
+                            pricing tiers with precision.
+                        </div>
+                    </div>
+                    <div class="box3 bg-[rgb(59,52,68)] h-auto md:min-h-50 rounded-md pl-4 py-4">
+                        <div class="icon bg-[rgb(1,184,67)] w-9 h-9 flex justify-center items-center text-white my-2">
+                            <iconify-icon icon="tabler:chart-pie" width="24" height="24"></iconify-icon>
+                        </div>
+
+                        <div class="heading">
+                            <h1 class="text-md text-gray-200 font-bold opacity-80 md:text-xl lg:text-2xl">Product
+                                Monitoring</h1>
+                        </div>
+                        <div class="desc text-white text-md opacity-70 py-2">
+                            Analyze feature adoption, user flows, and session patterns to refine product UX and
+                        </div>
+                    </div>
+
+                    <div class="box4 bg-[rgb(59,52,68)] h-auto md:min-h-50 rounded-md pl-4 py-4">
+                        <div class="icon bg-[rgb(225,53,53)] w-9 h-9 flex justify-center items-center text-white my-2">
+                            <iconify-icon icon="tabler:brand-google-analytics"></iconify-icon>
+                        </div>
+
+                        <div class="heading">
+                            <h1 class="text-md text-gray-200 font-bold opacity-80 md:text-xl lg:text-2xl">Team
+                                Productivity Insights</h1>
+                        </div>
+                        <div class="desc text-white text-md opacity-70 py-2">
+                            Visualize team output, project velocity, and task completion trends to make smarter
+                            resourcing.
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <section>
+        <div class="heading_dec text-center">
+            <div class="heading">
+                <h1 class="text-xl font-bold text-white md:text-2xl lg:text-2xl">Trusted by Teams Who Build the Future
+                </h1>
+            </div>
+            <div class="desc my-2">
+                <p class="text-base  text-white opacity-80 md:text-2xl lg:text-2xl">Join 50,000+ companies transforming
+                    their industries with us.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-linear-to-r from-[rgba(96,47,188,0.86)] to-[rgb(34,14,25)] inset-0 z-0 relative min-h-60 mx-4 overflow-hidden ">
+        <div class="main_left absolute z-30 left-0 bg-linear-to-l from-[rgb(52,47,61)] to-[rgb(0,0,0)] opacity-90  rounded-md  w-20 h-65 hidden"></div>
+        
+        <div class="main_right absolute z-30 right-0 bg-linear-to-r from-[rgb(52,47,61)]  to-[rgb(0,0,0)] opacity-90 rounded-md  w-20 h-65 hidden"></div>
+
+            <div class="one_translateX  flex  overflow-hidden gap-5 w-max pt-6 ">
+
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="google-logo.png" alt="" srcset="" class="w-25 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="amazon-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="hubspot-logo.png" alt="" srcset="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="walmart-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <div class="img   flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="microsoft-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)]  rounded-md w-30">
+                    <img src="airbnb-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <!-- Repeat -->
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="google-logo.png" alt="" srcset="" class="w-20 h-15">
+                </div>
+                <div class="img   flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="amazon-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="hubspot-logo.png" alt="" srcset="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="walmart-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="microsoft-logo.png" alt="" class="w-20 h-18">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="airbnb-logo.png" alt="" class="w-20 h-15">
+                </div>
+            </div>
+
+            <div class="two_translateX flex overflow-hidden gap-5 z-20  my-5 absolute  w-max">
+
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="fedex-logo.png" alt="" srcset="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="adobe-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="shopify-logo.png" alt="" srcset="" class="w-20 h-18">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="ola-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <div class="img   flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="huawei-logo.png" alt="" class="w-20 h-13">
+                </div>
+                <div class="img   flex justify-center items-center bg-[rgb(38,35,48)]  rounded-md w-30">
+                    <img src="bookmyshow-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <!-- Repeat -->
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="fedex-logo.png" alt="" srcset="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="adobe-logo.png" alt="" class="w-20 h-15">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="shopify-logo.png" alt="" srcset="" class="w-20 h-18">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="ola-logo.png" alt="" class="w-20 h-20">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="huawei-logo.png" alt="" class="w-20 h-18">
+                </div>
+                <div class="img flex justify-center items-center bg-[rgb(38,35,48)] rounded-md w-30">
+                    <img src="bookmyshow-logo.png" alt="" class="w-20 h-15">
+            </div>
+
+    </section>
+<section>
+        <div class="main bg-linear-to-r from-[rgb(71,27,153)] to-[rgba(76,32,153,0.35)]  mx-4">
+            <div class="heading text-center flex justify-center">
+                <h1 class="text-2xl text-white font-bold opacity-70 ">Don't just take our word for it.<br>They found Verified data with enrich. </h1>
+            </div>
+            <div class="dec text-center text-md text-white py-4 opacity-70 flex justify-center">Discover the enthusiastic feedback from our satisfied clients!</div>
+            <div class="button flex justify-center">
+                <a href="" class="rounded-lg  text-white w-70 h-14 text-lg flex justify-center items-center bg-linear-to-r  from-[rgb(79,36,158)] to-[rgb(86,39,175)]" >More Customers Stories &hearts;</a>
+            </div>
+            <div class="dots flex justify-center items-center gap-5 my-5 ">
+                <div class="dot1 rounded-full border border-black border-solid size-4  cursor-pointer transition"> 
+                    
+                </div>
+                <div class="dot1 rounded-full border border-black border-solid size-4  cursor-pointer transition"> 
+                    
+                </div>
+                <div class="dot1 rounded-full border border-black border-solid size-4 cursor-pointer transition">
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+</section>
+<section>
+
+        <!-- Main  -->
+    <div class="coursel overflow-hidden min-w-40 mx-4">
+        
+        <div class="slides bg-[rgb(52,47,61)] transition-transform duration-500 flex">
+            <div class="slide min-w-full bg-[rgb(50,45,58)] border border-[rgb(55,52,63)]  border-solid shadow-[0_0_0_4px_#322D3A ] rounded-lg">
+                <div class="flex justify-center gap-1 text-md py-4">
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-half-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                </div>      
+                <div class="desc text-center text-white text-sm">
+                <p>Outstanding product—well-crafted, user-friendly, and exactly what I expected. The team went above and beyond to help.above and beyond to help.</p>
+                </div>
+                <div class="icon rounded-full flex justify-center mt-6 ">
+                    <img src="marley.png" alt="" class="w-15 h-15 rounded-full object-cover">
+                    </div>
+                    <div class="name flex justify-center mt-4 text-white ">
+                    <h4>Marley Calzoni </h4>
+                    </div>
+                    <div class="desc flex justify-center text-white ">
+                        <p>CEO & Co-founder at Lemoncompany</p>
+                    </div>
+            </div>
+        
+                <!-- Second -->
+           
+
+            <div class="slide min-w-full bg-[rgb(50,45,58)] border border-[rgb(55,52,63)] border-solid shadow-[0_0_0_4px_#322D3A] rounded-lg">
+                <div class="flex justify-center gap-1 text-md py-4">
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon   iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                </div>  
+
+                <div class="desc text-center text-white text-sm">
+                    <p>The service exceeded my expectations. The team was responsive, and the product quality was top-notch. Highly recommend!</p>
+                </div>
+
+                <div class="icon rounded-full flex justify-center mt-6 ">
+                    <img src="martin.png" alt="" class="w-15 h-15 rounded-full object-cover">
+                    </div>
+                    <div class="name flex justify-center mt-4 text-white ">
+                    <h4>Martin Dorwart </h4>
+                    </div>
+                    <div class="desc flex justify-center text-white ">
+                        <p>Product manager at Orbit</p>
+                    </div>
+            </div>
+                <!-- Third -->
+            <div class="slide min-w-full bg-[rgb(50,45,58)] border border-[rgb(55,52,63)] border-solid shadow-[0_0_0_4px_#322D3A] rounded-lg">
+    
+                <div class="flex justify-center gap-1 text-md py-4">
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon icon="tabler:star-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                    <iconify-icon   iconify-icon icon="tabler:star-half-filled" class="text-yellow-400 text-4xl"></iconify-icon>
+                </div>     
+                <div class="desc text-center text-white text-sm">
+                    <p>Exceptional quality and service. The team was attentive to our needs, and the final product was flawless. Will definitely use again!</p>
+                </div>
+
+                <div class="icon rounded-full flex justify-center mt-6 ">
+                    <img src="alexandralee.png" alt="" class="w-15 h-15 rounded-full object-cover">
+                    </div>
+                    <div class="name flex justify-center mt-4 text-white ">
+                    <h4>Alexandra Lee</h4>
+                    </div>
+                    <div class="desc flex justify-center text-white ">
+                        <p>Lead Developer at TechNova </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="images_google_shopify_Microsoft flex justify-center gap-4 items-center mx-4 my-6">
+        <div class="img1">
+            <img src="google-logo-bw.png" alt="" class="w-25">
+        </div>
+        <div class="img1">
+            <img src="microsoft-logo-bw.png" alt="" class="w-25">
+        </div>
+        <div class="img1">
+            <img src="shopify-logo-bw.png" alt="" class="w-25">
+        </div>
+    </div>
+</section>
+<section class="mx-4">
+    <div class="main relative ">
+        <div class="main2 bg-[rgb(96,47,188)] min-h-90 ">
+         
+            <div class="img flex items-center absolute z-20 left-0 text-center">
+                <img src="left.svg" class="w-25">
+            </div>
+            <div class="img flex items-center absolute z-20 right-0">
+                <img src="right.svg" class="w-25">
+            </div>
+            <div class="launch flex justify-center">
+                <div class="text-white rounded-xl w-60 border-white border border-solid flex justify-center mt-15">Launch Your First Workspace</div>
+            </div>
+            <div class="heading flex justify-center text-center mt-2 text-xl text-white font-bold ">
+                <h1>Ready to Level Up Your Workflow?</h1>
+            </div>
+            <div class="dec flex justify-center py-2">
+                <p class="text-center text-sm text-white">Start building smarter, faster dashboards today — no setup hassle, no steep learning curve. Join thousands of teams already powering their growth with flyonUI.</p>
+            </div>
+        </div>
+        <div class="search flex justify-center">
+           <div class="search flex  absolute z-30 bottom-0 justfiy-center items-center gap-3 bg-[#292530] border  border-[#6a627c] border-solid focus:outline-none rounded-md  shadow-[0_0_0_4px_#332e3c ] max-w-100 ">
+                <i class="fa fa-envelope text-white pl-2 md:pl-2"></i>
+                <input type="email" placeholder="Enter Your Email Address" class="outline-none placeholder:text-gray-500 md:py-5 md:px-2" >
+                <button class="flex rounded-md py-2 px-2">
+                    <a href="" class="py-2  text-white text-sm rounded-md bg-[rgb(96,47,188)] w-20 md:w-30 lg:w-30 ">Get Started
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mx-4">
+    <div class="heading text-white opacity-80 text-3xl md:text-4xl text-center flex justify-center">
+        <h1>Driving innovation through data clarity & collaboration</h1>
+    </div>
+    <div class="disc text-white opacity-70 my-4 text-center flex justify-center">
+        <p>Driven by purpose, our team blends creativity, innovation, and expertise to shape remarkable outcomes.</p>
+    </div>
+
+    <div class="flex_images grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 ">
+        <div class="img1 bg-[rgba(22,54,26,0.45)] min-w-50 min-h-60 flex justify-center  relative rounded-lg">
+            <div class="img  absolute z-20 bottom-0">
+                <img src="team-1.png" alt="" class="w-60 h-60 ">
+            </div>
+            <div class="name absolute z-30 bottom-0 ">
+                <div class="bg-[rgb(52,47,61)] rounded-lg   px-10">
+                    <h2 class="text-gray-300 font-bold text-xl">Meghana Luthra</h2>
+                    <div class="desc_arrow flex items-center gap-2">
+                        <p class="text-xl text-gray-300">Product Designer</p>
+                        <p class="text-4xl text-[rgb(96,47,188)]">&rarr;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img1 flex justify-center bg-[rgba(92,77,33,0.35)] min-w-50 min-h-60 relative rounded-lg">
+            <div class="img absolute z-20 bottom-0">
+                <img src="team-2.png" alt="" class="w-60 h-60 ">
+             </div>
+            <div class="name absolute z-30 bottom-0 ">
+                <div class="bg-[rgb(52,47,61)] rounded-lg  px-10">
+                        <h2 class="text-gray-300 font-bold text-xl">Daniel Cortez<h2>
+                        <div class="desc_arrow flex items-center gap-2">
+                            <p class="text-xl text-gray-300">Lead Engineer</p>
+                            <p class="text-4xl text-[rgb(96,47,188)]">&rarr;</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="img1 flex justify-center bg-[rgba(73,34,202,0.14)] min-w-50 min-h-60 relative rounded-lg">
+            <div class="img absolute z-20 bottom-0">
+             <img src="team-3.png" alt="" class="w-60 h-60">
+             </div>
+
+             <div class="name absolute z-30 bottom-0 ">
+                <div class="bg-[rgb(52,47,61)] rounded-lg  py-1 px-10">
+                        <h2 class="text-gray-300 font-bold text-xl">Vera Kim</h2>
+                        <div class="desc_arrow flex items-center gap-2">
+                            <p class="text-xl text-gray-300">Customer Lead</p>
+                            <p class="text-4xl text-[rgb(96,47,188)]">&rarr;</p>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="img1 flex justify-center bg-[rgba(36,33,122,0.19)]   min-w-50 min-h-60 relative rounded-lg">
+            <div class="img absolute z-20 bottom-0">
+             <img src="team-4.png" alt="" class="w-60 h-60 ">
+             </div>
+
+                <div class="name absolute z-30 bottom-0 ">
+                    <div class="bg-[rgb(52,47,61)] rounded-lg   px-10">
+                        <h2 class="text-gray-300 font-bold text-xl">Karan</h2>
+                        <div class="desc_arrow flex items-center gap-2">
+                            <p class="text-xl text-gray-300">BediGrowth & Strategy<p>
+                            <p class="text-4xl text-[rgb(96,47,188)]">&rarr;</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+<footer class="mx-4">
+            <div class="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-x-1">
+                <div class="item1 col-span-2 lg:col-span-1 ">
+                    <h2>
+                    <div class="Group1_Logo logo flex gap-2 text-[rgb(69,33,137)] mt-6">
+                            <svg width="32" height="32" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_18078_104881)">
+                                    <mask id="mask0_18078_104881" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                                        width="34" height="34">
+                                        <path
+                                            d="M25.5 0H8.5C3.80558 0 0 3.80558 0 8.5V25.5C0 30.1944 3.80558 34 8.5 34H25.5C30.1944 34 34 30.1944 34 25.5V8.5C34 3.80558 30.1944 0 25.5 0Z"
+                                            fill="white"></path>
+                                    </mask>
+                                    <g mask="url(#mask0_18078_104881)">
+                                        <path
+                                            d="M25.5 0H8.5C3.80558 0 0 3.80558 0 8.5V25.5C0 30.1944 3.80558 34 8.5 34H25.5C30.1944 34 34 30.1944 34 25.5V8.5C34 3.80558 30.1944 0 25.5 0Z"
+                                            fill="url(#paint0_linear_18078_104881)"></path>
+                                        <path
+                                            d="M16.1238 20.1522C16.511 19.662 17.2479 19.6428 17.66 20.1122L20.5526 23.41C21.1194 24.0563 20.6611 25.0689 19.8016 25.0692H14.3055C13.47 25.0692 13.0026 24.1059 13.5203 23.4501L16.1238 20.1522ZM16.1326 8.45497C16.5308 7.95801 17.286 7.95453 17.6883 8.44813L27.5164 20.5077C28.0488 21.161 27.5838 22.1395 26.741 22.1395H24.4442C24.1428 22.1395 23.8577 22.0034 23.6678 21.7694L17.7029 14.4188C17.2962 13.9175 16.5285 13.927 16.1346 14.4384L10.7303 21.454C10.5411 21.6996 10.2484 21.8435 9.9383 21.8436H7.4881C6.64925 21.8436 6.18332 20.8733 6.70783 20.2186L16.1326 8.45497Z"
+                                            fill="url(#paint1_linear_18078_104881)"></path>
+                                    </g>
+                                    <path
+                                        d="M25.5002 0.707886H8.50017C4.19695 0.707886 0.708496 4.19634 0.708496 8.49956V25.4996C0.708496 29.8028 4.19695 33.2912 8.50017 33.2912H25.5002C29.8034 33.2912 33.2918 29.8028 33.2918 25.4996V8.49956C33.2918 4.19634 29.8034 0.707886 25.5002 0.707886Z"
+                                        stroke="url(#paint2_linear_18078_104881)" stroke-width="2"></path>
+                                </g>
+                                <defs>
+                                    <linearGradient id="paint0_linear_18078_104881" x1="30.2812" y1="2.65625" x2="4.25" y2="32.4063"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="currentColor"></stop>
+                                        <stop offset="1" stop-color="currentColor"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_18078_104881" x1="17.1147" y1="8.08008" x2="17.1147"
+                                        y2="25.0692" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="white"></stop>
+                                        <stop offset="1" stop-color="white" stop-opacity="0.6"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_18078_104881" x1="17.0002" y1="-0.000447931" x2="17.0002"
+                                        y2="33.9996" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="white" stop-opacity="0.28"></stop>
+                                        <stop offset="1" stop-color="white" stop-opacity="0.04"></stop>
+                                    </linearGradient>
+                                    <clipPath id="clip0_18078_104881">
+                                        <rect width="34" height="34" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div class="Group2_Heading flex items-center heading text-xl text-gray-300 font-bold">
+                                <a href="">
+                                    <span>Saas Dashboard</span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="desc py-2  text-gray-300">
+                            <p>Build smarter dashboards. Visualize real-time data. Scale with clarity.</p>
+                        </div>
+
+                        <hr class="text-white w-24">
+                        <div class="icons flex gap-2">
+                            <div class="github my-2 text-white">
+                                <iconify-icon icon="tabler:brand-github" width="24" height="24"></iconify-icon>
+                            </div>
+                            <div class="discord my-2 text-blue-500">
+                                <iconify-icon icon="tabler:brand-discord" width="24" height="24"></iconify-icon>
+                            </div>
+                            <div class="Twitter my-2 text-[rgb(46,139,87)]">
+                                <iconify-icon icon="tabler:brand-x" width="24" height="24"></iconify-icon>
+                            </div>
+                            <div class="Youtube my-2 text-red-500">
+                            <iconify-icon icon="tabler:brand-youtube" width="24" height="24"></iconify-icon>
+                            </div>
+                        </div>
+
+                </div>
+                    <div class="item2 text-gray-300 grid flex-col gap-3 md:mt-6">
+                        <h2 class="text-xl font-bold ">Quick Lines</h2>
+                        <span>Features</span>
+                        <span>Use Cases</span>
+                        <span>Documentation</span>
+                        <span>Contact</span>
+                    </div>
+
+                    <div class="item3 text-gray-300 grid flex-col gap-3 md:mt-6 ">
+                        <h2 class="text-xl font-bold ">Resources</h2>
+                        <span>Blogs</span>
+                        <span>Stack Community</span>
+                        <span>Events</span>
+                    </div>
+                    <div class="item4 text-gray-300 grid grid-cols-1 flex-col gap-3 md:mt-3">
+                        <h2 class="text-xl font-bold mt-3">Help</h2>
+                        <span>Customer Support </span>
+                        <span>Request a feature</span>
+                        <span>Terms & Condition</span>
+                        <span>Privacy Policy</span>
+                    </div>
+            
+                    <div class="item5 grid  col-span-full lg:col-span-2  md:col-span-4  text-gray-300 my-4 w-full">
+                        <h4 class="font-xl font-bold md:font-2xl">Subscribe to newsletter</h4>
+                        <div class="main flex gap-2">
+                            <div class="flex gap-2 my-2 border-gray-400 border border-solid rounded-md px-3 py-3 w-full">
+                                <input type="email" placeholder="Your email..." class=" outline-none">
+                            </div>
+                            <button class="max-w-12 max-h-18 bg-[rgb(96,47,188)]">
+                                <a href="" class="min-h-2">
+                                <iconify-icon icon="tabler:arrow-right" width="25" height="18"></iconify-icon>
+                                </a>
+                            </button>
+                        </div>
+                         <hr class="text-white mt-2">
+                        <div class="flex_icons flex gap-4 flex-wrap mt-4">
+                                <div class="img1   h-fit w-fit ">
+                                    <img src="bestofjs.png" alt="" class="w-20 h-10 " >
+                                </div>
+                                <div class="img1  h-fit w-fit ">
+                                    <img src="product-hunt.png" alt="" class="w-20 h-10 " >
+                                </div>
+                                <div class="img1  h-fit w-fit ">
+                                    <img src="reddit.png" alt="" class="w-20 h-10" >
+                                </div>
+                                <div class="img1  h-fit w-fit ">
+                                    <img src="medium-logo-bw.png" alt="" class="w-20 h-10" >
+                                </div>
+                                <div class="img1 h-fit w-fit ">
+                                    <img src="ycombinator.png" alt="" class="w-20 h-10" >
+                                </div>
+                                <div class="img1 h-fit w-fit ">
+                                    <img src="launchtory.png" alt="" class="w-15 h-10" >
+                                </div>
+                        </div>
+                    </div>
+            </div>
+       
+    <div class="desc flex justify-center flex-wrap gap-1">
+        <span class="text-white">&copy;2024</span>
+        <span class="text-[rgb(96,47,188)]">Saas Dashboard,</span>
+        <span class="text-white">Made With &#10084; for a better web.</span>
+    </div>
+
+</footer>
+<div class="setting  fixed right-0 z-50 top-1/2">
+    <div class="setting_logo w-12 h-12 flex justify-center items-center  bg-[rgb(96,47,188)] text-white rounded-md">
+        <iconify-icon icon="tabler:settings" width="24" height="24" class="setting animate-spin"></iconify-icon>   
+    </div>
+</div>
+
+</body>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script>
+let index = 0;
+const slides = document.querySelector('.slides');
+const dots = document.querySelectorAll('.dot1');
+const totalSlides = dots.length;
+
+
+
+function showSlide(i) {
+  index = i;
+  slides.style.transform = `translateX(-${i * 100}%)`;
+
+  dots.forEach(dot => dot.classList.remove('bg-[#7033ff]'));
+  dots[i].classList.add('bg-[#7033ff]');
+}
+
+
+// dot click
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => showSlide(i));
+});
+
+
+// auto slide
+setInterval(() => {
+  index++;
+  if (index >= totalSlides) index = 0;
+  showSlide(index);
+}, 3000); // 3 sec
+
+
+let hamburger = document.getElementById("hamburger");
+let ham_symbol = document.getElementById("ham_symbol");
+let cross = document.getElementById("cross");
+let menu = document.getElementById("menu");
+
+let isOpen=false
+hamburger.addEventListener("click",()=>{
+    isOpen=!isOpen
+    if(isOpen){
+        menu.classList.remove("hidden")
+        ham_symbol.classList.add("hidden")
+        cross.classList.remove("hidden")
+    }
+    else{
+        menu.classList.add("hidden")
+        ham_symbol.classList.remove("hidden")
+        cross.classList.add("hidden")
+    }
+})
+
+</script>
+
+</html>
+
+
+
+
+                   
+                  
